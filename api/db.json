@@ -1,41 +1,72 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "produto": "Calça jeans",
-        "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
-        "descricao": "Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
-        "valor":"350,00",
-        "categoria_id":"1",
-        "empresa_id":"2"
+  "products": [
+    {
+      "id": 1,
+      "produto": "Calça jeans",
+      "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
+      "descricao": "Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
+      "valor": "350,00",
+      "categoria_id": "1",
+      "empresa_id": "2"
+    },
+    {
+      "id": 2,
+      "produto": "Calça jeans2",
+      "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
+      "descricao": "Imagem 2 Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
+      "valor": "2350,00",
+      "categoria_id": "1",
+      "empresa_id": "2"
+    },
+    {
+      "id": 3,
+      "produto": "Calça jeans3",
+      "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
+      "descricao": "Imagem 3 Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
+      "valor": "3350,00",
+      "categoria_id": "1",
+      "empresa_id": "2"
+    },
+    {
+      "id": 4,
+      "produto": "Calça jeans4",
+      "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
+      "descricao": "Imagem 4 Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
+      "valor": "450,00",
+      "categoria_id": "1",
+      "empresa_id": "2"
+    },
+    {
+      "initialValue": {
+        "produto": "",
+        "foto": "",
+        "descricao": "",
+        "valor": 0,
+        "categoria_id": "",
+        "empresa_id": ""
       },
-      {
-        "id": 2,
-        "produto": "Calça jeans2",
-        "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
-        "descricao": "Imagem 2 Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
-        "valor":"2350,00",
-        "categoria_id":"1",
-        "empresa_id":"2"
+      "produto": "camiseta herois",
+      "foto": "https://a-static.mlcdn.com.br/618x463/camiseta-preta-muse-foto-grupo-bandalheira/accordesartstudio/17588-4348/8d360c04e4b239a392289724429e7c0a.jpg",
+      "descricao": "camiseta preta do valverine",
+      "valor": "15.50",
+      "empresa_id": "jfhjkvhjkvjk",
+      "id": 6
+    },
+    {
+      "initialValue": {
+        "produto": "",
+        "foto": "",
+        "descricao": "",
+        "valor": 0,
+        "categoria_id": "",
+        "empresa_id": ""
       },
-      {
-        "id": 3,
-        "produto": "Calça jeans3",
-        "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
-        "descricao": "Imagem 3 Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
-        "valor":"3350,00",
-        "categoria_id":"1",
-        "empresa_id":"2"
-      },
-      {
-        "id": 4,
-        "produto": "Calça jeans4",
-        "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
-        "descricao": "Imagem 4 Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
-        "valor":"450,00",
-        "categoria_id":"1",
-        "empresa_id":"2"
-      }
-    ] 
+      "produto": "vestido",
+      "foto": "https://cuplovershop.cdn.plataformaneo.com.br/produto/592311612__ME_0375_592311612.jpg",
+      "descricao": "vestido vermelho tamanho 36",
+      "valor": "2500",
+      "empresa_id": "dcdwc",
+      "id": 7
+    }
+  ]
 }
-    

@@ -16,7 +16,7 @@ const ProductsSearch = () => {
     if (search) {
       params.produto_like = search;
     }
-    axios.get('http://localhost:5000/products', { params })
+    axios.get('http://localhost:5000/products?&_order=desc&_sort=id', { params })
       .then((response) => {
         setProducts(response.data);
       });
