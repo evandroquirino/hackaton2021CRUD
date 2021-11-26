@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ProductsCard from '../Card/Card';
-import { Link } from 'react-router-dom';
+import ProductsList from '../List/List';
+import { Link, useParams } from 'react-router-dom';
 import "./Search.css"
 
 const ProductsSearch = () => {
@@ -11,11 +12,15 @@ const ProductsSearch = () => {
 
 
   useEffect(() => {
-    axios.get('http://localhost:5000/products')
+    const params = {};
+    if (search) {
+      params.produto_like = search;
+    }
+    axios.get('http://localhost:5000/products', { params })
       .then((response) => {
         setProducts(response.data);
       });
-  }, []);
+  }, [search]);
 
   return (
       <div className="products-search">
@@ -30,9 +35,7 @@ const ProductsSearch = () => {
           value={search}
           onChange={(ev) => setSearch(ev.target.value)} 
         />
-        {products.map((product) => (
-            <ProductsCard product={product} />
-        ))}
+        <ProductsList products={products} loading={!products.length} />
       </div>
   );
 
