@@ -61,12 +61,13 @@
         "categoria_id": "",
         "empresa_id": ""
       },
-      "produto": "vestido",
+      "produto": "vestido teste",
       "foto": "https://cuplovershop.cdn.plataformaneo.com.br/produto/592311612__ME_0375_592311612.jpg",
-      "descricao": "vestido vermelho tamanho 36",
-      "valor": "2500",
-      "empresa_id": "dcdwc",
-      "id": 7
+      "descricao": "vestido vermelho tamanho 36 teste",
+      "valor": "2,00",
+      "empresa_id": "1",
+      "id": 7,
+      "categoria_id": "valor1"
     }
   ]
 }

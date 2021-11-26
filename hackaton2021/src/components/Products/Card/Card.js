@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Card.css';
 
 const ProductsCard = ({product}) => (
@@ -9,6 +10,7 @@ const ProductsCard = ({product}) => (
             <span className="products-card__valor">R$ {product.valor}</span>
             <p className="products-card__descricao">{product.descricao}</p>
         </div>
+        <Link to={`/edit/${product.id}`}>Editar</Link>
     </div>
 );
 
