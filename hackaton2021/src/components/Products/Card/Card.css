@@ -1,0 +1,40 @@
+.products-card{
+    border-radius: 8px;
+    border: 1px solid #c3c3c3;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0, 0.15);
+    display: flex;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+.products-card__foto{
+    max-width:120px;
+    max-height:120px;
+    width: auto;
+    height: auto;
+    border-radius: 25%;
+    margin-right: 20px;
+  }
+
+.products-card__produto{
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+
+
+.products-card__valor{
+    font-size: 26px;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.products-card__descricao{
+    max-width: 90%;
+    color:#2c3e50;
+    font-weight: 700;
+}
+
+
+
+  
