@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ProductsSearch from '../../../components/Products/Seach/Search';
+import UIContainer from '../../../components/UI/Container/Container';
 
 const PagesProductSearch = () => {
   const [products, setProducts] = useState([]);
@@ -13,14 +14,9 @@ const PagesProductSearch = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        maxWidth: 800,
-        margin: '30px auto',
-      }}
-    >
+      <UIContainer>
         <ProductsSearch />
-    </div>
+      </UIContainer>
   );
 };
 
