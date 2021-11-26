@@ -13,7 +13,7 @@ const initialValue = {
 }
 
 const ProductsForm = ({ id }) => {
-    const [values, setValues] = useState({initialValue});
+    const [values, setValues] = useState(id ? null : initialValue);
     const history = useHistory();
 
     useEffect(() => {
@@ -49,7 +49,10 @@ const ProductsForm = ({ id }) => {
         <div>
             <h1>Produtos</h1>
             <h2>Novos Produtos</h2>
-
+            {!values
+            ? (
+                <div>Carregando...</div>
+            ) : ( 
             <form onSubmit={onSubmit}>
                 <div className="products-form__group">
                     <label htmlFor="produto">Produto:</label>
@@ -83,7 +86,7 @@ const ProductsForm = ({ id }) => {
                     <button type="submit">Salvar</button>
                 </div>
             </form>
-
+            )}
         </div>
     )
 };

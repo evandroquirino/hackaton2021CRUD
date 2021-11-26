@@ -61,13 +61,33 @@
         "categoria_id": "",
         "empresa_id": ""
       },
-      "produto": "vestido teste",
+      "produto": "vestido",
       "foto": "https://cuplovershop.cdn.plataformaneo.com.br/produto/592311612__ME_0375_592311612.jpg",
-      "descricao": "vestido vermelho tamanho 36 teste",
-      "valor": "2,00",
+      "descricao": "vestido vermelho tamanho 36/38/40/42",
+      "valor": "450,00",
       "empresa_id": "1",
       "id": 7,
       "categoria_id": "valor1"
+    },
+    {
+      "initialValue": {
+        "produto": "",
+        "foto": "",
+        "descricao": "",
+        "valor": 0,
+        "categoria_id": "",
+        "empresa_id": ""
+      },
+      "id": 8
+    },
+    {
+      "produto": "camisa",
+      "foto": "",
+      "descricao": "vckjufvjlvjuklgfukoigli",
+      "valor": "6546565",
+      "categoria_id": "",
+      "empresa_id": "6253232",
+      "id": 9
     }
   ]
 }
