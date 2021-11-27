@@ -73,6 +73,11 @@ const ProductsSearch = () => {
           products={loadInfo.data} 
           loading={loadInfo.loading} 
           error={loadInfo.error}  
+          refetch={() => {
+            load({
+              params: baseParams,
+            });
+          }}
         />
         {loadInfo.data && 
         !loadInfo.loading && 

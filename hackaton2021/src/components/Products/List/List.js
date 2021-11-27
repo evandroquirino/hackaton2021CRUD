@@ -1,8 +1,14 @@
 import React from 'react';
 import "./List.css";
 import ProductsCard from '../Card/Card';
+import useApi from '../../utils/useApi';
 
-const ProductsList = ({ loading, error, products}) => {
+const ProductsList = ({ loading, error, products, refetch}) => {
+
+    const[deleteProduct, deleteProductInfo ] = useApi({
+        method: 'DELETE',
+    });
+
     if(error) {
         return <div>Ocorreu um erro inesperado</div>;
     }
@@ -16,7 +22,15 @@ const ProductsList = ({ loading, error, products}) => {
     return(
         <div className="products-list">
             {products.map((product) => (
-            <ProductsCard product={product} />
+            <ProductsCard 
+                product={product} 
+                onclickDelete={async () => {
+                    await deleteProduct({
+                        url: `/products/${product.id}`
+                    });
+                    refetch();
+                }}
+            />
         ))}
         {loading && <div>Carregando mais promoções...</div>}
         </div>
