@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import useApi from '../../utils/useApi';
 import ProductsList from '../List/List';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./Search.css"
 
 const ProductsSearch = () => {
-
+    const mountRef = useRef(null);
     const [search, setSearch] = useState('');
     const [load, loadInfo] = useApi({
+      debounceDelay: 300,
       url:'/products',
       method: 'get',
       params: {
@@ -18,7 +19,14 @@ const ProductsSearch = () => {
     });
 
   useEffect(() => {
-    load();
+    
+    load({
+      debounced: mountRef.current,
+    });
+
+    if (!mountRef.current) {
+      mountRef.current = true;
+    }
   }, [search]);
 
   return (
