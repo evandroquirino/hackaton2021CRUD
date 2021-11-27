@@ -61,7 +61,7 @@
         "categoria_id": "",
         "empresa_id": ""
       },
-      "produto": "vestido",
+      "produto": "vestido vermelho",
       "foto": "https://cuplovershop.cdn.plataformaneo.com.br/produto/592311612__ME_0375_592311612.jpg",
       "descricao": "vestido vermelho tamanho 36/38/40/42",
       "valor": "450,00",
@@ -78,16 +78,48 @@
         "categoria_id": "",
         "empresa_id": ""
       },
-      "id": 8
+      "id": 8,
+      "produto": "capa invisivel",
+      "descricao": "capa usada no filme do harry potter",
+      "valor": "1500,00",
+      "empresa_id": "3",
+      "foto": "https://cuplovershop.cdn.plataformaneo.com.br/produto/592311612__ME_0375_592311612.jpg"
     },
     {
-      "produto": "camisa",
-      "foto": "",
-      "descricao": "vckjufvjlvjuklgfukoigli",
-      "valor": "6546565",
+      "produto": " so olhar a foto, ta vendo o que é ?",
+      "foto": "https://photos.enjoei.com.br/jaqueta-jeans-fato-basico-50444266/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy81OTAzMjM2L2RhNDdjYzUyODE3ZDU3NjE0YzJkMWViMmI2ZTY4YjQxLmpwZw",
+      "descricao": "me diz o que vc vê",
+      "valor": "2,00",
       "categoria_id": "",
-      "empresa_id": "6253232",
+      "empresa_id": "1",
       "id": 9
+    },
+    {
+      "produto": "cachoeira2",
+      "foto": "https://static7.depositphotos.com/1004998/737/i/600/depositphotos_7371112-stock-photo-beautiful-nature.jpg",
+      "descricao": "tu é cego ?",
+      "valor": "5,00",
+      "categoria_id": "",
+      "empresa_id": "3",
+      "id": 10
+    },
+    {
+      "produto": "nenem",
+      "foto": "https://photos.enjoei.com.br/jaqueta-jeans-fato-basico-50444266/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy81OTAzMjM2L2RhNDdjYzUyODE3ZDU3NjE0YzJkMWViMmI2ZTY4YjQxLmpwZw",
+      "descricao": "teste Imagem 2 Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
+      "valor": "5000,00",
+      "categoria_id": "",
+      "empresa_id": "14",
+      "id": 11
+    },
+    {
+      "produto": "espingarda",
+      "foto": "https://photos.enjoei.com.br/jaqueta-jeans-fato-basico-50444266/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy81OTAzMjM2L2RhNDdjYzUyODE3ZDU3NjE0YzJkMWViMmI2ZTY4YjQxLmpwZw",
+      "descricao": "arma de fogo de alto poder de destrição",
+      "valor": "1500,00",
+      "categoria_id": "",
+      "empresa_id": "3",
+      "id": 12
     }
   ]
 }

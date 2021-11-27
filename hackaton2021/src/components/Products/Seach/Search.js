@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import ProductsCard from '../Card/Card';
+import useApi from '../../utils/useApi';
 import ProductsList from '../List/List';
 import { Link, useParams } from 'react-router-dom';
 import "./Search.css"
 
 const ProductsSearch = () => {
 
-    const [products, setProducts] = useState([]);
     const [search, setSearch] = useState('');
-
+    const [load, loadInfo] = useApi({
+      url:'/products',
+      method: 'get',
+      params: {
+        _order: 'desc',
+        _sort: 'id',
+        produto_like: search || undefined,
+      },
+    });
 
   useEffect(() => {
-    const params = {};
-    if (search) {
-      params.produto_like = search;
-    }
-    axios.get('http://localhost:5000/products?&_order=desc&_sort=id', { params })
-      .then((response) => {
-        setProducts(response.data);
-      });
+    load();
   }, [search]);
 
   return (
@@ -35,7 +34,11 @@ const ProductsSearch = () => {
           value={search}
           onChange={(ev) => setSearch(ev.target.value)} 
         />
-        <ProductsList products={products} loading={!products.length} />
+        <ProductsList 
+          products={loadInfo.data} 
+          loading={loadInfo.loading} 
+          error={loadInfo.error}  
+        />
       </div>
   );
 

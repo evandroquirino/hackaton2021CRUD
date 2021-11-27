@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "./Form.css";
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
+import useApi from '../../utils/useApi';
 
 const initialValue = {
     produto:'',
@@ -15,15 +16,30 @@ const initialValue = {
 const ProductsForm = ({ id }) => {
     const [values, setValues] = useState(id ? null : initialValue);
     const history = useHistory();
+    const[load] = useApi({
+        url: `/products/${id}`,
+        method: 'get',
+        onCompleted: (response) => {
+            setValues(response.data);
+        }
+    });
+
+    const [save, saveInfo] = useApi({
+        url:id ? `/products/${id}`: '/products',
+        method : id ? 'put' : 'post',
+        data: values,
+        onCompleted: (response) => {
+            if(!response.error){
+                history.push('/');
+            }
+        }
+    })
 
     useEffect(() => {
         if (id) {
-            axios.get(`http://localhost:5000/products/${id}`)
-                .then((response) => {
-                    setValues(response.data);
-                })
+            load();
         }
-    }, []);
+    }, [id]);
 
     function onChange(ev){
         const { name, value } = ev.target;
@@ -33,16 +49,7 @@ const ProductsForm = ({ id }) => {
 
     function onSubmit(ev) {
         ev.preventDefault();
-
-        const method = id ? 'put' : 'post';
-        const url = id
-            ? `http://localhost:5000/products/${id}`
-            : 'http://localhost:5000/products'
-
-        axios[method](url, values)
-            .then((response) => {
-                history.push('/');
-            });
+        save();
     }
 
     return (
@@ -54,6 +61,7 @@ const ProductsForm = ({ id }) => {
                 <div>Carregando...</div>
             ) : ( 
             <form onSubmit={onSubmit}>
+                {saveInfo.loading && <span>Salvando dados</span>}
                 <div className="products-form__group">
                     <label htmlFor="produto">Produto:</label>
                     <input id="produto" name="produto" type="text" onChange={onChange} value={values.produto}/>
