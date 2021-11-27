@@ -1,8 +1,14 @@
+.products-search{
+    background-color: #faf9f9;
+}
+
 .products-search__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    background-color: #BCE8F0;
+    padding: 0 25px;
 }
 
 .products-search__header h1{
@@ -19,4 +25,13 @@
     padding: 0 10px;
 }
 
+.products-search__header .link{
+    margin: 0 15px;
+    background: rgba(0, 138, 41, 0.897);
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    text-decoration: none;
+}
 /* products-search  */

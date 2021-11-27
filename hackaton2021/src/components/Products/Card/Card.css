@@ -1,9 +1,12 @@
+
 .products-card{
+    padding: 15px;
     border-radius: 8px;
     border: 1px solid #c3c3c3;
     box-shadow: 0 2px 7px 0 rgba(0,0,0, 0.15);
+}
+.products-card-cont{
     display: flex;
-    padding: 15px;
     align-items: flex-start;
     position: relative;
 }
@@ -31,13 +34,14 @@
 }
 
 .products-card__descricao{
-    max-width: 90%;
+
     color:#2c3e50;
     font-weight: 700;
+    width: 100%;
 }
 
   .teste{
-      width: 100%;
+    width: 100%;
   }
 
 .promotion-card__edit-button {

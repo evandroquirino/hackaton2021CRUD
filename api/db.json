@@ -13,7 +13,7 @@
       "id": 2,
       "produto": "Calça jeans2",
       "foto": "https://lojasgang.vteximg.com.br/arquivos/ids/276463/38030178-2.jpg?v=637388565944100000",
-      "descricao": "Imagem 2 Calca skiny, tamanho 38, coleção inverno 2021, azul escuro com detalhes na lavagem",
+      "descricao": "Lembrando que isso é possível em qualquer elemento, como divs, spans e etc.  E não para por aí, o cursor tem diversos valores não só a famosa mãozinha, veja alguns outros:",
       "valor": "2350,00",
       "categoria_id": "1",
       "empresa_id": "2"
@@ -47,7 +47,7 @@
       },
       "produto": "camiseta herois",
       "foto": "https://a-static.mlcdn.com.br/618x463/camiseta-preta-muse-foto-grupo-bandalheira/accordesartstudio/17588-4348/8d360c04e4b239a392289724429e7c0a.jpg",
-      "descricao": "camiseta preta do valverine",
+      "descricao": "camiseta preta do valverineson",
       "valor": "15.50",
       "empresa_id": "jfhjkvhjkvjk",
       "id": 6
@@ -72,7 +72,7 @@
     {
       "produto": "jaqueta",
       "foto": "https://photos.enjoei.com.br/jaqueta-jeans-fato-basico-50444266/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy81OTAzMjM2L2RhNDdjYzUyODE3ZDU3NjE0YzJkMWViMmI2ZTY4YjQxLmpwZw",
-      "descricao": "me diz o que vc vê",
+      "descricao": "jaque bem bonita",
       "valor": "2,00",
       "categoria_id": "",
       "empresa_id": "1",

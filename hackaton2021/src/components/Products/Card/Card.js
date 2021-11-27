@@ -6,12 +6,14 @@ import './Card.css';
 
 const ProductsCard = ({product, onclickDelete}) => (
     <div className="products-card">
+    <div className="products-card-cont">
         <img className="products-card__foto" alt={product.produto} src={product.foto} />
         <div className="products-card__info" >
             <h1 className="products-card__produto" >{product.produto}</h1>
             <span className="products-card__valor">R$ {product.valor}</span>
-            <p className="products-card__descricao">{product.descricao}</p>
+            
         </div>
+        
         <div className=" teste"></div>
             <Link to={`/edit/${product.id}`}className="promotion-card__edit-button">Editar</Link>
             <button type="button" 
@@ -21,6 +23,10 @@ const ProductsCard = ({product, onclickDelete}) => (
                 <BiTrash />
             </button>
     </div>
+    <p className="products-card__descricao">{product.descricao}</p>
+
+    </div>
+   
 );
 
 export default ProductsCard;

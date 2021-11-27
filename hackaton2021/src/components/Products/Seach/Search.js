@@ -60,7 +60,7 @@ const ProductsSearch = () => {
       <div className="products-search">
         <header className="products-search__header">
           <h1>Meus produtos</h1>
-          <Link to="/create">Novo produto</Link>
+          <Link to="/create" className="link">Novo produto</Link>
         </header>
         <input 
           type="search" 
