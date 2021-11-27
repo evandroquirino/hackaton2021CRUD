@@ -22,22 +22,39 @@ export default function useApi(config){
 
         const finalConfig = {
             baseURL: 'http://localhost:5000',
+            updateRequestInfo: newInfo => newInfo ,
             ...config,
             ...localConfig
+        };
+
+        if(finalConfig.isFetchMore) {
+            setRequestInfo({
+                ...initialRequestInfo,
+                data: requestInfo.data,
+                loading: true,
+            });
         }
 
         const fn = finalConfig.debounced ? debouncedAxios : axios;
         try{
             response = await fn(finalConfig);
-            setRequestInfo({
+            const newRequestInfo = {
                 ...initialRequestInfo,
                 data: response.data,
-            });
+            };
+
+            if(response.headers['x-total-count'] !== undefined) {
+                newRequestInfo.total = Number.parseInt(response.headers['x-total-count'], 10);
+            }
+
+            setRequestInfo(
+                finalConfig.updateRequestInfo(newRequestInfo, requestInfo)
+            );
         }catch(error){
-            setRequestInfo({
+            setRequestInfo(finalConfig.updateRequestInfo({
                 ...initialRequestInfo,
                 error,
-            });
+            }, requestInfo));
         }
 
 

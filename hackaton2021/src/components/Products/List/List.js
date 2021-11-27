@@ -6,7 +6,7 @@ const ProductsList = ({ loading, error, products}) => {
     if(error) {
         return <div>Ocorreu um erro inesperado</div>;
     }
-    if(loading || products === null) {
+    if(products === null) {
         return <div>Carregando...</div>;
     }
     if(products.length === 0) {
@@ -18,6 +18,7 @@ const ProductsList = ({ loading, error, products}) => {
             {products.map((product) => (
             <ProductsCard product={product} />
         ))}
+        {loading && <div>Carregando mais promoções...</div>}
         </div>
     )
 }
